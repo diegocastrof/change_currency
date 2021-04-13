@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Casa Cambio</title>
+		<link rel="stylesheet" href="./index.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Casa de Cambio</h1>
+			<h2>Compra venta de Dólares / Euros</h2>
+			<br />
+			<button id="btn-change-config">Cambiar configuración</button>
+			<button class="hidden" id="btn-save-config">Guardar cambios</button>
+			<section class="hidden" id="config-prices">
+				<h3>Precios diarios</h3>
+				<div id="dolar-buy">
+					<label for="dolar-buy">Valor Dolar COMPRA</label>
+					<input type="number" name="dolar-buy" id="dolar-buy-input" />
+				</div>
+				<br />
+				<div id="dolar-sell">
+					<label for="dolar-sell">Valor Dolar VENTA</label>
+					<input type="number" name="dolar-sell" id="dolar-sell-input" />
+				</div>
+				<br />
+				<div id="euro-buy">
+					<label for="euro-buy">Valor Euro COMPRA</label>
+					<input type="number" name="euro-buy" id="euro-buy-input" />
+				</div>
+				<br />
+				<div id="euro-sell">
+					<label for="euro-sell">Valor Euro Venta</label>
+					<input type="number" name="euro-sell" id="euro-sell-input" />
+				</div>
+			</section>
+			<br />
+			<br />
+			<br />
+			<section id="prices-table">
+				<table>
+					<thead>
+						<tr>
+							<th>COMPRA DOLAR</th>
+							<th>VENTA DOLAR</th>
+							<th>COMPRA EURO</th>
+							<th>VENTA EURO</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td id="table-dolar-buy"></td>
+							<td id="table-dolar-sell"></td>
+							<td id="table-euro-buy"></td>
+							<td id="table-euro-sell"></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section id="operations">
+				<h3>Operaciones</h3>
+				<div id="operation-buy-dolar-section">
+					<button id="dolar-buy-btn">Comprar Dólares!</button>
+					<br />
+					<label for="operation-dolar-buy">Dolares a Comprar</label>
+					<input
+						type="number"
+						name="operation-dolar-buy"
+						id="operation-dolar-buy-input"
+					/>
+					<label for="dolar-buy-result">Total COMPRA</label>
+					<input
+						type="number"
+						name="dolar-buy-result"
+						id="dolar-buy-result"
+						disabled
+					/>
+				</div>
+				<br />
+				<br />
+				<div id="operation-sell-dolar-section">
+					<button id="dolar-sell-btn">Vender Dólares!</button>
+					<br />
+					<label for="operation-dolar-sell">Dolares a Vender</label>
+					<input
+						type="number"
+						name="operation-dolar-sell"
+						id="operation-dolar-sell-input"
+					/>
+					<label for="dolar-sell-result">Total VENTA</label>
+					<input
+						type="number"
+						name="dolar-sell-result"
+						id="dolar-sell-result"
+						disabled
+					/>
+				</div>
+				<br />
+				<br />
+				<div id="operation-buy-euro-section">
+					<button id="euro-buy-btn">Comprar Euros!</button>
+					<br />
+					<label for="operation-euro-buy">Euros a Comprar</label>
+					<input
+						type="number"
+						name="operation-euro-buy"
+						id="operation-euro-buy-input"
+					/>
+					<label for="euro-buy-result">Total COMPRA</label>
+					<input
+						type="number"
+						name="euro-buy-result"
+						id="euro-buy-result"
+						disabled
+					/>
+				</div>
+				<br />
+				<br />
+				<div id="operation-sell-euro-section">
+					<button id="euro-sell-btn">Vender Euros!</button>
+					<br />
+					<label for="operation-euro-sell">Euros a Vender</label>
+					<input
+						type="number"
+						name="operation-euro-sell"
+						id="operation-euro-sell-input"
+					/>
+					<label for="euro-sell-result">Total VENTA</label>
+					<input
+						type="number"
+						name="euro-sell-result"
+						id="euro-sell-result"
+						disabled
+					/>
+				</div>
+			</section>
+			<section id="results">
+				<h2>Reporte de Transacciones</h2>
+				<ul id="result-list"></ul>
+			</section>
+		</div>
+		<script src="./index.js"></script>
+	</body>
+</html>

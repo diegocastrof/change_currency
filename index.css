@@ -1,0 +1,20 @@
+.hidden {
+	display: none;
+}
+
+.container {
+	width: 50%;
+	margin: 0 auto;
+}
+
+table,
+td {
+	border: 1px solid #333;
+	text-align: center;
+}
+
+thead,
+tfoot {
+	background-color: #333;
+	color: #fff;
+}
